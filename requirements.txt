@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 streamlit>=1.35.0
 pandas>=2.2.0
 plotly>=5.22.0
+=======
+streamlit
+pandas
+numpy
+plotly
+>>>>>>> 70a170cc6f56618e431c7e129003de52e87fb180

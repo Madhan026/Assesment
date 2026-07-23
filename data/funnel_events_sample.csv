@@ -1,4 +1,4 @@
-user_id,step,timestamp
+user_id,event_name,timestamp
 U009,visited_site,2026-07-20 03:53:00
 U013,details_filled,2026-07-20 04:36:00
 U047,email_verified,2026-07-20 04:41:00

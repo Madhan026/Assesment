@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Funnel Dashboard — Custom Styling
+   Applied on top of Streamlit's default theme for a cleaner, more
+   professional, and responsive look.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ---- Main container spacing ---- */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1400px;
+}
+
+/* ---- Titles ---- */
+h1 {
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    color: #0F172A;
+}
+
+h2, h3 {
+    font-weight: 600 !important;
+    color: #1E293B;
+    margin-top: 0.5rem;
+}
+
+/* ---- KPI / metric cards ---- */
+div[data-testid="stMetric"] {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    transform: translateY(-1px);
+}
+
+div[data-testid="stMetricLabel"] {
+    font-weight: 500;
+    color: #64748B;
+}
+
+div[data-testid="stMetricValue"] {
+    font-weight: 700;
+    color: #0F172A;
+}
+
+/* ---- Sidebar ---- */
+section[data-testid="stSidebar"] {
+    background-color: #F8FAFC;
+    border-right: 1px solid #E2E8F0;
+}
+
+section[data-testid="stSidebar"] .stMarkdown h1 {
+    font-size: 1.3rem;
+}
+
+/* ---- Dataframes / tables ---- */
+div[data-testid="stDataFrame"] {
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ---- Buttons ---- */
+.stButton > button, .stDownloadButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #2563EB;
+    color: #2563EB;
+    background-color: #FFFFFF;
+    transition: all 0.15s ease;
+}
+
+.stButton > button:hover, .stDownloadButton > button:hover {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+/* ---- Alert boxes ---- */
+div[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* ---- Horizontal rules ---- */
+hr {
+    margin: 1.2rem 0;
+    border-color: #E2E8F0;
+}
+
+/* ---- Expander ---- */
+details {
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    div[data-testid="stMetric"] {
+        margin-bottom: 0.5rem;
+    }
+}
